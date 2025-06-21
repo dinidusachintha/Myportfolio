@@ -11,35 +11,79 @@
         <div id="header">
             <div class="container">
                 <nav>
-                    <img src="images/logo.png" class="logo">
+                    <img src="images/logo.png" class="logo" alt="Logo">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">AboutMe</a></li>
                         <li><a href="#">Skills</a></li>
                         <li><a href="#">Projects</a></li>
-
                     </ul>
                 </nav>
                 <div class="header-text">
-                    <h1>HI, I'M <span>DINIDU.S</span><br></h1>
+                    <h1>HI, I'M <span>DINIDU.S</span></h1>
                     <p>I'm a full stack developer specialized in creating efficient and intuitive web solutions.</p>
+                </div>
+            </div>
         </div>
-        <!------------------------------------ABOUT-------------------------------------------------------------------------------------------->
+        <!-- About Section -->
         <div id="about">
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="images/background2.png">
+                        <img src="images/background2.png" alt="About Image">
                     </div>
                     <div class="about-col-2">
-                    <h1 class="sub-title">AboutMe</h1>
-                    <p>Hi! I'm Dinidu, a passionate full-stack developer with expertise in both frontend and backend technologies.<br>
-                        I enjoy building web applications that are not only functional but also provide great user experiences.<br>
-                        I'm currently pursuing my Bachelor's degree in software engineering while continuously developing my skills through hands-on projects and staying updated with the latest industry trends.<br>
-                        My focus is on creating scalable and maintainable applications using modern technologies like React, Node.js, and MongoDB. I'm particularly interested in building solutions that make a positive impact.</p>
-                  </div>  
-               </div>
+                        <h1 class="sub-title">About Me</h1>
+<p class="p1">
+  Hi! I'm Dinidu, a passionate full-stack developer with expertise in both frontend and backend technologies.
+  I enjoy building web applications that are not only functional but also provide great user experiences.
+</p>
+<p class="p3">
+  I'm currently pursuing my Bachelor's degree in software engineering while continuously developing <br> my skills through hands-on projects and 
+  staying updated with the latest industry trends.
+</p>
+<p class="p4">
+  My focus is on creating scalable and maintainable applications using modern technologies like React, Node.js, and MongoDB. I'm particularly interested in building solutions that make a positive impact.
+</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI?UX</span><br>Designing web/App interfaces</li>
+                                <li><span>Web Development</span><br>web/App Development</li>
+                            </ul>
+                            <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022/GCE A/L</span><br>DS Senanayake Collage Colombo 07</li>
+                                <li><span>2023/present</span><br> Under undergraduate Information Technology Sri
+                                Lanka Institute of Information Technology</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+            <script>
+                var tablinks = document.getElementsByClassName('tab-links');
+                var tabcontents = document.getElementsByClassName('tab-contents');
+                function opentab(tabname) {
+                    for (tablink of tablinks) {
+                        tablink.classList.remove("active-link");
+                    }
+                    for (tabcontent of tabcontents) {
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+            
+            </script>
+
+
+
     </body>
 </html>
