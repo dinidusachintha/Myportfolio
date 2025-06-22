@@ -20,34 +20,66 @@
 </head>
 <body>
   <!-- Header Section -->
-  <header id="header">
-    <div class="container">
-      <nav>
-        <img src="images/gg2.png" class="logo" alt="Dinidu Sachintha Logo" />
-        <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <li><a href="#tech-stack">Skills</a></li>
-          <li><i class="fas fa-times" onclick="closemenu()"></i></li>
-        </ul>
-        <i class="fas fa-bars" onclick="openmenu()"></i>
-      </nav>
-      <div class="header-text" data-aos="fade-up">
-        <h1 data-aos="fade-right" data-aos-delay="200">HI, I'M <span>DINIDU SACHINTHA</span></h1>
-        <h2 data-aos="fade-left" data-aos-delay="400">Full Stack Developer</h2>
-        <p data-aos="fade-up" data-aos-delay="600">Crafting digital experiences with clean code and intuitive design</p>
-        <div class="social-icons" data-aos="fade-up" data-aos-delay="800">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fas fa-envelope"></i></a>
-        </div>
-        <a href="#contact" class="btn btn-main" data-aos="fade-up" data-aos-delay="1000">Contact Me</a>
+ <!-- Header Section -->
+<header id="header" class="header-section">
+  <div class="container">
+    <nav class="navbar">
+      <!-- Logo -->
+      <a href="#header" class="logo-link">
+        <img src="images/logo.png" class="logo" alt="Dinidu Sachintha - Full Stack Developer" width="150" height="40" loading="lazy">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <ul class="nav-menu" id="sidemenu">
+        <li class="nav-item"><a href="#header" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#portfolio" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#tech-stack" class="nav-link">Skills</a></li>
+        <li class="nav-item">
+          <button class="menu-close-btn" onclick="closemenu()" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+          </button>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" onclick="openmenu()" aria-label="Open menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Hero Content -->
+    <div class="hero-content" data-aos="fade-up">
+      <h1 class="hero-title" data-aos="fade-right" data-aos-delay="200">
+        HI, I'M <span class="highlight">DINIDU SACHINTHA</span>
+      </h1>
+      <h2 class="hero-subtitle" data-aos="fade-left" data-aos-delay="400">Full Stack Developer</h2>
+      <p class="hero-description" data-aos="fade-up" data-aos-delay="600">
+        Crafting digital experiences with clean code and intuitive design
+      </p>
+      
+      <div class="social-links" data-aos="fade-up" data-aos-delay="800">
+        <a href="https://github.com/yourusername" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://twitter.com/yourhandle" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="mailto:contact@dinidu.com" class="social-link" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
+      
+      <a href="#contact" class="cta-button" data-aos="fade-up" data-aos-delay="1000">
+        Contact Me <i class="fas fa-arrow-right"></i>
+      </a>
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- About Section -->
   <section id="about">
@@ -130,93 +162,75 @@
     </div>
   </section>
 
+  
   <!-- Projects Section -->
-  <!-- Projects Section -->
-<section id="portfolio">
+ <section id="projects" class="projects-section">
   <div class="container">
-    <h1 class="sub-title">Featured Projects</h1>
-    <div class="work-list">
-      <!-- Project 1 - Food Delivery Platform -->
-      <div class="work" data-aos="fade-up">
-        <img src="images/food-delivery-project.jpg" alt="Food Delivery Platform">
-        <div class="layer">
-          <div class="project-content">
-            <h3>Food Delivery Platform</h3>
-            <p class="project-description">A modern, microservices-based food ordering and delivery platform for Sri Lanka. Built with React, Node.js, Express, and MongoDB, the system supports customer ordering, restaurant management, real-time delivery tracking, secure authentication, and payment processing.</p>
-            
-            <div class="project-features">
-              <p><i class="fas fa-check-circle"></i> Fully containerized with Docker and orchestrated via Kubernetes</p>
-              <p><i class="fas fa-check-circle"></i> Real-time order tracking with WebSockets</p>
-              <p><i class="fas fa-check-circle"></i> Secure payment integration</p>
-            </div>
-            
-            <div class="project-tagline">
-              <h4>Authentic Sri Lankan Food Delivered To Your Door</h4>
-              <p>From spicy kottu to delicious hoppers, order your favorite local dishes and get them delivered in minutes. Experience the taste of Sri Lanka from the comfort of your home.</p>
-            </div>
-            
-            <div class="project-highlights">
-              <div class="highlight-item">
-                <span class="highlight-icon">[ ]</span>
-                <span>Free delivery for first-time customers</span>
-              </div>
-              <div class="highlight-item">
-                <span class="highlight-icon">[ ]</span>
-                <span><strong>First Food</strong> - Exclusive early access program</span>
-              </div>
-            </div>
-            
-            <div class="project-testimonial">
-              <p>"Popular menu choices: Kottu, Hoppers, String Hoppers"</p>
-            </div>
-            
-            <div class="tech-used">
+    <div class="section-heading" data-aos="fade-up">
+      <h1 class="sub-title" data-aos="fade-right">My Projects</h1>
+      <h3 class="frontend-dev-heading" data-aos="fade-up">
+          My Recent Works
+        </h3>
+    </div>
+    
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project-item" data-aos="fade-up">
+        <div class="project-box">
+          <div class="image-div">
+            <img src="./images/homeplate.webp" alt="Food Delivery Platform" loading="lazy" />
+          </div>
+          <div class="info-div">
+            <h3 class="ProjectHeading">Food Delivery Platform</h3>
+            <p class="ProjectDescription">
+              A modern, microservices-based food ordering platform built with React, Node.js, and MongoDB. Features real-time tracking, secure payments, and Docker containerization.
+            </p>
+            <div class="project-tech">
               <span>React</span>
               <span>Node.js</span>
               <span>MongoDB</span>
-              <span>Docker</span>
-              <span>Kubernetes</span>
             </div>
-            
-            <div class="project-links">
-              <a href="#" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-              <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> View Code</a>
+            <div class="project-buttons">
+              <a href="https://github.com/Loo0per/food-ordering-system" target="_blank" class="github-redirect" aria-label="View on GitHub">
+                <img src="./images/githublogo.png" alt="GitHub" />
+              </a>
+              <a href="#" class="cta">
+                <span>Live Demo</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
             </div>
           </div>
-        </div> 
-      </div>
-      
-      <!-- Project 2 - Other Project -->
-      <div class="work" data-aos="fade-up" data-aos-delay="200">
-        <img src="images/work-2.png" alt="E-commerce App">
-        <div class="layer">
-          <h3>E-commerce Store</h3>
-          <p>Online shopping platform with product catalog, cart functionality, and secure checkout.</p>
-          <div class="tech-used">
-            <span>Spring Boot</span>
-            <span>React</span>
-            <span>MySQL</span>
-          </div>
-          <a href="#"><i class="fas fa-external-link-alt"></i></a>
         </div>
       </div>
       
-      <!-- Project 3 - Other Project -->
-      <div class="work" data-aos="fade-up" data-aos-delay="400">
-        <img src="images/work-3.png" alt="Task Management App">
-        <div class="layer">
-          <h3>Task Manager</h3>
-          <p>Productivity application for task management with drag-and-drop interface and team collaboration.</p>
-          <div class="tech-used">
-            <span>React</span>
-            <span>Firebase</span>
-            <span>Tailwind CSS</span>
+      <!-- Project 2 -->
+      <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-box">
+          <div class="image-div">
+            <img src="./images/netflixclone.png"  alt=Tourism Management System" loading="lazy" />
           </div>
-          <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          <div class="info-div">
+            <h3 class="ProjectHeading">Tourism Management System</h3>
+            <p class="ProjectDescription">
+              Comprehensive tourism platform for Sri Lanka with React frontend, Node.js backend, and MongoDB database. Features booking management and Tailwind CSS styling.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Tailwind</span>
+            </div>
+            <div class="project-buttons">
+              <a href="https://github.com/Loo0per/tourism-system" target="_blank" class="github-redirect" aria-label="View on GitHub">
+                <img src="./images/githublogo.png" alt="GitHub" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <a href="#" class="btn" data-aos="fade-up">View All Projects</a>
   </div>
 </section>
 
@@ -373,5 +387,6 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+  
 </body>
 </html>
