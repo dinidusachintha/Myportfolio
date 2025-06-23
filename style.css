@@ -932,12 +932,13 @@ footer i {
     margin-right: 20px;
     font-size: 16px;
   }
-
-  
-
-  
-
-
+}
+footer {
+  background: rgba(4, 184, 255, 0.856);
+  color: var(--light-color);
+  padding: 20px 0;
+  font-size: 14px;
+}
 footer a {
   color: var(--primary-color);
   text-decoration: none;
