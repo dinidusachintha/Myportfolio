@@ -934,12 +934,12 @@ footer i {
   }
 
   .tech-stack-box {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
   }
 
   .tech-stack-logo {
-    width: 50%;
+    width: 150px;
   }
 }
 .section-subtitle{
