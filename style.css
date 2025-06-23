@@ -961,3 +961,31 @@ footer p a {
 footer p a:hover {
   color: var(--secondary-color);
 }
+
+.back-to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary-color);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+.back-to-top:hover {
+  background: #d90042;
+  transform: translateY(-3px);  
+  box-shadow: 0 10px 20px rgba(255, 0, 79, 0.3);
+  color: var(--light-color);
+  
+} 
+
+.fas fa-arrow-up {
+  font-size: 50px;
+}
+.fas fa-arrow-up:hover {
+  transform: scale(1.1);
+}
