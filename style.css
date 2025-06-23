@@ -711,7 +711,7 @@ body::after {
 
 .tech-stack-box {
   width: 150px;
-  height: 1px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
