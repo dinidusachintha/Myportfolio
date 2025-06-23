@@ -710,8 +710,8 @@ body::after {
 }
 
 .tech-stack-box {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -933,23 +933,10 @@ footer i {
     font-size: 16px;
   }
 
-  .tech-stack-box {
-    width: 150px;
-    height: 150px;
-  }
+  
 
-  .tech-stack-logo {
-    width: 150px;
-  }
-}
-.section-subtitle{
-  font-size: 25px;
-  color: var(--gray-color);
-  margin-bottom: 30px;
-  font-weight: 400;
   
-  
-}
+
 
 footer a {
   color: var(--primary-color);
