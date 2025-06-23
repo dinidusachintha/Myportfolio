@@ -137,7 +137,7 @@ body::after {
 .header-section {
   min-height: 100vh;
   background: 
-    linear-gradient(rgb(6, 6, 24), rgb(1, 0, 10)),
+    linear-gradient(#060618, rgb(1, 0, 10)),
     url('images/hero-bg.jpg') no-repeat center center/cover;
   position: relative;
   display: flex;
@@ -831,7 +831,7 @@ form textarea {
 footer {
   padding: 20px 0;
   text-align: center;
-  background: rgba(0, 0, 0, 0.3);
+  background: #060618;
   font-size: 14px;
   color: var(--gray-color);
 }
@@ -934,7 +934,7 @@ footer i {
   }
 }
 footer {
-  background: rgba(4, 184, 255, 0.856);
+  background: #060618;
   color: var(--light-color);
   padding: 20px 0;
   font-size: 14px;
@@ -975,12 +975,13 @@ footer p a:hover {
   z-index: 1000;
   transition: all 0.3s ease;
 }
+
 .back-to-top:hover {
   background: #d90042;
   transform: translateY(-3px);  
   box-shadow: 0 10px 20px rgba(255, 0, 79, 0.3);
   color: var(--light-color);
-  
+
 } 
 
 .fas fa-arrow-up {
