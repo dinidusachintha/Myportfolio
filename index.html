@@ -370,23 +370,18 @@
     }
     
     // Form submission
-    const scriptURL = 'YOUR_GOOGLE_SCRIPT_URL'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
     
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-          msg.innerHTML = "Message sent successfully"
-          setTimeout(function(){
-            msg.innerHTML = ""
-          }, 5000)
-          form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
   </script>
-  
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxxWymED5CmrsqcS1SBPdtoohgIerCQHKksh00rF_SiRMu0sxnogiq3eLTdMjP5dr90aw/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 </html>
